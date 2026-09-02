@@ -1,0 +1,29 @@
+@use "../../styles/variables" as *;
+
+.hero {
+    flex: 0 0 100vw;
+
+    width: 100vw;
+    height: 100vh;
+
+    padding: $page-padding;
+
+    display: flex;
+    align-items: top;
+
+    background: $color-background;
+
+    &__title {
+        font-size: clamp(5rem, 13vw, 13rem);
+
+        line-height: 0.8;
+        letter-spacing: -0.07em;
+    }
+
+    &__intro {
+        max-width: 32rem;
+        margin-top: 2rem;
+
+        font-size: clamp(1rem, 1.5vw, 1.5rem);
+    }
+}

@@ -1,0 +1,16 @@
+@use "./reset";
+@use "./typography";
+@use "./variables" as *;
+
+html {
+    background: $color-background;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+::selection {
+    background: $color-blue;
+    color: white;
+}

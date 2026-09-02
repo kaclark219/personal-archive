@@ -1,0 +1,22 @@
+// Colors
+$color-background: #ffffff;
+$color-text: #151515;
+
+$color-red: #e34234;
+$color-blue: #315ee7;
+$color-green: #4b8f58;
+
+$color-gray-light: #f3f3f0;
+$color-gray: #b8b8b2;
+
+// Fonts
+$font-display: "PP Mondwest", serif;
+$font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+// Layout
+$page-padding: clamp(1.25rem, 3vw, 3rem);
+$nav-height: 4.5rem;
+
+// Misc.
+$border: 1px solid $color-text;
+$transition: 200ms ease;

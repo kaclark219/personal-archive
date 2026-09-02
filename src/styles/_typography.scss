@@ -1,0 +1,27 @@
+@use "./variables" as *;
+
+body {
+    font-family: $font-body;
+    color: $color-text;
+    background: $color-background;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: $font-display;
+}
+
+p {
+    line-height: 1.5;
+}
+
+@font-face {
+    font-family: "PP Mondwest";
+    src: url("../assets/fonts/ppmondwest-regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

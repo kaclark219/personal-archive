@@ -1,0 +1,62 @@
+@use "../../styles/variables" as *;
+
+.navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+
+    width: 100%;
+    height: $nav-height;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 $page-padding;
+
+    background: rgba($color-background, 0.92);
+    border-bottom: 1px solid $color-text;
+
+
+    &__links {
+        display: flex;
+        align-items: center;
+        gap: clamp(1rem, 2.5vw, 2.5rem);
+
+        button {
+        appearance: none;
+
+        padding: 0;
+
+        border: 0;
+        background: transparent;
+
+        color: $color-text;
+        cursor: pointer;
+
+        font-family: $font-body;
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+
+        transition: opacity $transition;
+
+        &:hover {
+            opacity: 0.5;
+        }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        &__links {
+        gap: 1rem;
+
+        button {
+            font-size: 0.75rem;
+        }
+        }
+    }
+}

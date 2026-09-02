@@ -1,0 +1,14 @@
+.horizontal-scroll {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.horizontal-scroll__track {
+  display: flex;
+  align-items: stretch;
+  width: -moz-max-content;
+  width: max-content;
+  height: 100vh;
+  will-change: transform;
+}/*# sourceMappingURL=HorizontalScroll.css.map */
